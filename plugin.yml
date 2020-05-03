@@ -1,0 +1,6 @@
+name: img2map
+main: soradore\image2map\main
+description: test
+author: soradore
+version: 1.0.0
+api: [3.0.0]
