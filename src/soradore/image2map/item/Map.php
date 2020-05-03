@@ -36,10 +36,10 @@ class Map extends Item {
         for($x=0;$x<$this->width;$x++){
             for($y=0;$y<$this->height;$y++){
                 $rgb = \imagecolorat($image, $x, $y);
-				$r = ($rgb >> 16) & 0xff;
-				$g = ($rgb >> 8) & 0xff;
-				$b = $rgb & 0xff;
-				$colors[$y][$x] = new Color($r, $g, $b);
+		$r = ($rgb >> 16) & 0xff;
+		$g = ($rgb >> 8) & 0xff;
+	        $b = $rgb & 0xff;
+       	        $colors[$y][$x] = new Color($r, $g, $b);
             }
         }
         $this->setColor($colors);
